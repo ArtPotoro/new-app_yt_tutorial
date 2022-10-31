@@ -10,7 +10,7 @@
         class="flex items-center justify-center
                     bg-black text-white rounded-xl py-1 px-3 mr-2
                     text-xs">
-        <a href="/new-app/public/?tag={{$tag}}">{{$tag}}</a>
+        <a href="/new-app/public/?tag={{ urlencode($tag) }}">{{$tag}}</a>
     </li>
     @endforeach
 </ul>
